@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_03c4e97884b543768261e5284becae35 {
+                #map_fb67646ed3b34c36a972d21a0d9cb43f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_03c4e97884b543768261e5284becae35" ></div>
+            <div class="folium-map" id="map_fb67646ed3b34c36a972d21a0d9cb43f" ></div>
         
 </body>
 <script>    
     
-            var map_03c4e97884b543768261e5284becae35 = L.map(
-                "map_03c4e97884b543768261e5284becae35",
+            var map_fb67646ed3b34c36a972d21a0d9cb43f = L.map(
+                "map_fb67646ed3b34c36a972d21a0d9cb43f",
                 {
                     center: [49.189848, -123.126379],
                     crs: L.CRS.EPSG3857,
@@ -55,39 +55,39 @@
 
         
     
-            var tile_layer_1003494e6c984892be5b50a478e2732e = L.tileLayer(
+            var tile_layer_453c3984464640b68a852bf341168521 = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_03c4e97884b543768261e5284becae35);
+            ).addTo(map_fb67646ed3b34c36a972d21a0d9cb43f);
         
     
-            var marker_9b57a9412fc94d2b8c499d1146f43dc2 = L.marker(
+            var feature_group_6fac96cd205547f0b31377510353afc4 = L.featureGroup(
+                {}
+            ).addTo(map_fb67646ed3b34c36a972d21a0d9cb43f);
+        
+    
+            var marker_7a476c8d89be448fb8aa94874c78cc7b = L.marker(
                 [49.189848, -123.126379],
                 {}
-            ).addTo(map_03c4e97884b543768261e5284becae35);
+            ).addTo(feature_group_6fac96cd205547f0b31377510353afc4);
         
     
-            var icon_aa0a405f811f4c0ca22889fb813aff25 = L.AwesomeMarkers.icon(
+            var icon_3121472e05dc4eb39d9193070101a629 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_9b57a9412fc94d2b8c499d1146f43dc2.setIcon(icon_aa0a405f811f4c0ca22889fb813aff25);
+            marker_7a476c8d89be448fb8aa94874c78cc7b.setIcon(icon_3121472e05dc4eb39d9193070101a629);
         
     
-        var popup_1001bde7092143149c60f83bd7439119 = L.popup({"maxWidth": "100%"});
+        var popup_d414a2c51059449c857b4663fde13e9d = L.popup({"maxWidth": "100%"});
 
         
-            var html_c3e00a68843b4396aaba9103ad390dc2 = $(`<div id="html_c3e00a68843b4396aaba9103ad390dc2" style="width: 100.0%; height: 100.0%;">Home</div>`)[0];
-            popup_1001bde7092143149c60f83bd7439119.setContent(html_c3e00a68843b4396aaba9103ad390dc2);
+            var html_d510cf7e2e144a9c85b62c1106fb188a = $(`<div id="html_d510cf7e2e144a9c85b62c1106fb188a" style="width: 100.0%; height: 100.0%;">Home</div>`)[0];
+            popup_d414a2c51059449c857b4663fde13e9d.setContent(html_d510cf7e2e144a9c85b62c1106fb188a);
         
 
-        marker_9b57a9412fc94d2b8c499d1146f43dc2.bindPopup(popup_1001bde7092143149c60f83bd7439119)
+        marker_7a476c8d89be448fb8aa94874c78cc7b.bindPopup(popup_d414a2c51059449c857b4663fde13e9d)
         ;
 
         
     
-    
-            var feature_group_fedcbb43f29b4c98b6beeeccc934a469 = L.featureGroup(
-                {}
-            ).addTo(map_03c4e97884b543768261e5284becae35);
-        
 </script>
