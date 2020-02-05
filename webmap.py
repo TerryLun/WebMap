@@ -10,11 +10,15 @@ lon = list(data['LON'])
 elev = list(data['ELEV'])
 name = list(data['NAME'])
 
+html = """<h4>Volcano information:</h4>
+Height: %s m
+"""
 
 # add markers using FeatureGroup
 fg = folium.FeatureGroup(name='My Map')
 for lt, ln, el, nm in zip(lat, lon, elev, name):
-    fg.add_child(folium.Marker(location=[lt, ln], popup=nm+'\n'+str(el)+' m', icon=folium.Icon(color='red')))
+    iframe = folium.IFrame(html=html % str(el), width=200, height=100)
+    fg.add_child(folium.Marker(location=[lt, ln], popup=folium.Popup(iframe), icon=folium.Icon(color='red')))
 volcanoes_map.add_child(fg)
 
 # generate map
