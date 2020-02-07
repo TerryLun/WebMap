@@ -34,8 +34,6 @@ for lt, ln, el, nm in zip(lat, lon, elev, name):
         folium.CircleMarker(location=[lt, ln], radius=7, popup=folium.Popup(iframe), fill_color=color_producer(el),
                             color='grey', fill_opacity=0.8))
 
-fg.add_child(folium.GeoJson(data=(open('world.json', 'r', encoding='UTF-8-sig').read())))
-
 # add feature group
 volcanoes_map.add_child(fg)
 
