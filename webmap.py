@@ -27,7 +27,7 @@ def color_producer(ele):
 
 
 # add markers using FeatureGroup
-fg = folium.FeatureGroup(name='My Map')
+fg = folium.FeatureGroup(name='Volcanoes')
 for lt, ln, el, nm in zip(lat, lon, elev, name):
     iframe = folium.IFrame(html=html % (nm, nm, el), width=200, height=100)
     fg.add_child(
@@ -36,6 +36,9 @@ for lt, ln, el, nm in zip(lat, lon, elev, name):
 
 # add feature group
 volcanoes_map.add_child(fg)
+
+# add layer control
+volcanoes_map.add_child(folium.LayerControl())
 
 # generate map
 volcanoes_map.save('volcanoes_map.html')
